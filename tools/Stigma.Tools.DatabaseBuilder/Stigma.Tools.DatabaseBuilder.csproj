@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <InvariantGlobalization>true</InvariantGlobalization>
+        <PublishAot>true</PublishAot>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\libs\Stigma.SourceGenerators\Stigma.SourceGenerators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+      <ProjectReference Include="..\..\src\Stigma.Servers.AuthServer\Stigma.Servers.AuthServer.csproj" />
+      <ProjectReference Include="..\..\src\Stigma.Servers.GameServer\Stigma.Servers.GameServer.csproj" />
+    </ItemGroup>
+
+</Project>
