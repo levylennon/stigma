@@ -10,8 +10,6 @@ public sealed class PropertySymbol
 
     public required string Type { get; set; }
 
-    public required AccessorKind AccessorKind { get; set; }
-
     public required int Index { get; set; }
 
     public string? Value { get; set; }
@@ -38,6 +36,6 @@ public sealed class PropertySymbol
 
     public override string ToString()
     {
-        return $"Name: {Name}, Type: {Type}, AccessorKind: {AccessorKind}, Index: {Index}";
+        return $"Name: {Name}, Type: {Type}, Index: {Index}";
     }
 }
