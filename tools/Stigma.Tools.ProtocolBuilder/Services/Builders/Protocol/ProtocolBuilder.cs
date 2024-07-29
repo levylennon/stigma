@@ -94,9 +94,6 @@ public sealed class ProtocolBuilder : IBuilder
                 SymbolKind.Enums => _enumParser.Parse(typeSymbol),
                 _ => throw new ArgumentOutOfRangeException()
             };
-            
-            if (classSymbol is null)
-                continue;
 
             _symbolStorage.AddClassSymbol(classSymbol);
 

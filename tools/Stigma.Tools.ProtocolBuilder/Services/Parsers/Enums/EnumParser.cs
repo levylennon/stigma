@@ -12,7 +12,7 @@ public sealed class EnumParser : IParser
     {
         _regexStorage = regexStorage;
     }
-    
+
     public ClassSymbol Parse(TypeSymbol typeSymbol)
     {
         var matches = _regexStorage.Matches(RegexKind.EnumProperty, typeSymbol.Source).ToArray();
@@ -37,8 +37,7 @@ public sealed class EnumParser : IParser
                 Name = name.Value,
                 Type = type.Value,
                 Value = ParseValue(value.Value),
-                Index = index,
-                AccessorKind = AccessorKind.Public
+                Index = index
             });
         }
 

@@ -8,12 +8,12 @@ namespace Stigma.Tools.ProtocolBuilder.Services.Renderers.Enums;
 public sealed class EnumRenderer : IRenderer
 {
     private readonly GlobalOptions _options;
-    
+
     public EnumRenderer(IOptions<GlobalOptions> options)
     {
         _options = options.Value;
     }
-    
+
     public string Render(ClassSymbol classSymbol)
     {
         var builder = new IndentedStringBuilder()

@@ -13,7 +13,7 @@ public sealed class EnumConverter : IConverter
     {
         _options = options.Value;
     }
-    
+
     public void Convert(ClassSymbol classSymbol)
     {
         classSymbol.Type.Name = classSymbol.Type.Name
@@ -21,9 +21,7 @@ public sealed class EnumConverter : IConverter
             .Pluralize();
 
         foreach (var property in classSymbol.Properties)
-        {
             property.Name = string.Join(string.Empty, property.Name.Split('_', StringSplitOptions.RemoveEmptyEntries).Select(x => x.ToLowerInvariant().Pascalize()));
-        }
 
         classSymbol.Type.Namespace = string.Concat(_options.Namespace, ".Enums");
 

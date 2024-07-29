@@ -1,6 +1,6 @@
-﻿using System.Text.Json.Serialization;
+﻿#nullable disable
 
-#nullable disable
+using System.Text.Json.Serialization;
 
 namespace Stigma.Tools.ProtocolBuilder.Options;
 

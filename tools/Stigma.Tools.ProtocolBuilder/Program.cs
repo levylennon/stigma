@@ -16,7 +16,7 @@ using Stigma.Tools.ProtocolBuilder.Services.Parsers.Enums;
 using Stigma.Tools.ProtocolBuilder.Services.Renderers;
 using Stigma.Tools.ProtocolBuilder.Services.Renderers.Class;
 using Stigma.Tools.ProtocolBuilder.Services.Renderers.Enums;
-using Stigma.Tools.ProtocolBuilder.Storages.Identity;
+using Stigma.Tools.ProtocolBuilder.Storages.Keywords;
 using Stigma.Tools.ProtocolBuilder.Storages.Regexes;
 using Stigma.Tools.ProtocolBuilder.Storages.Symbols;
 
@@ -39,9 +39,9 @@ Host
             .AddKeyedSingleton<IRenderer, EnumRenderer>("enums")
             .AddSingleton<IBuilder, FactoryBuilder>()
             .AddSingleton<IBuilder, ProtocolBuilder>()
-            .AddSingleton<IIdentityStorage, IdentityStorage>()
             .AddSingleton<IRegexStorage, RegexStorage>()
             .AddSingleton<ISymbolStorage, SymbolStorage>()
+            .AddSingleton<IKeywordStorage, KeywordStorage>()
             .AddSingleton<IGeneratorService, GeneratorService>();
     })
     .ConfigureLogging(logging =>
