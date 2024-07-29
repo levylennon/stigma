@@ -5,10 +5,11 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsAotCompatible>true</IsAotCompatible>
+        <NoWarn>$NoWarn;CS8618</NoWarn>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Stigma.Core\Stigma.Core.csproj" />
+        <ProjectReference Include="..\Stigma.Core\Stigma.Core.csproj"/>
     </ItemGroup>
 
 </Project>
