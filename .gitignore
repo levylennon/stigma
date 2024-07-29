@@ -16,8 +16,6 @@
 # Mono auto generated files
 mono_crash.*
 
-appsettings.env
-
 # Build results
 [Dd]ebugPublic/
 [Rr]elease/
@@ -67,7 +65,6 @@ artifacts/
 ScaffoldingReadMe.txt
 
 # StyleCop
-*.json
 *.zip
 StyleCopReport.xml
 # Files built by Visual Studio
